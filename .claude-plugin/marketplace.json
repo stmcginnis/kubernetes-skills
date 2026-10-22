@@ -1,0 +1,12 @@
+{
+  "name": "kubernetes-skills",
+  "description": "Agent skills for contributing to the Kubernetes projects",
+  "owner": { "name": "Sean McGinnis" },
+  "plugins": [
+    {
+      "name": "k8s-contributor",
+      "source": "./",
+      "description": "Kubernetes contributor workflow: CLA, AI-use policy, commits, PRs, release notes, Prow review, local verification, and issue triage"
+    }
+  ]
+}

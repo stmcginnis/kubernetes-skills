@@ -1,0 +1,8 @@
+{
+  "name": "k8s-contributor",
+  "description": "Kubernetes contributor workflow: CLA, AI-use policy, commits, PRs, release notes, Prow review, local verification, and issue triage",
+  "author": { "name": "Sean McGinnis" },
+  "homepage": "https://github.com/stmcginnis/kubernetes-skills",
+  "repository": "https://github.com/stmcginnis/kubernetes-skills",
+  "license": "Apache-2.0"
+}

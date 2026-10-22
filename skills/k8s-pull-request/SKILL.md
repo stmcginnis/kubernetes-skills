@@ -13,8 +13,8 @@ write on the author's behalf.
 
 ## Commit messages
 
-The author writes the commit message. When asked, check it against these
-rules and report each violation:
+Follow these rules when writing a commit message, and when checking one the
+author wrote, report each violation:
 
 - Subject of 50 characters or less, never more than 72.
 - Subject capitalized, unless it starts with a lowercase identifier such as a
@@ -31,6 +31,31 @@ rules and report each violation:
   description instead.
 - No `#123` references to PRs or issues and no `@mentions`.
 - No AI attribution trailers (`Co-authored-by`, `Assisted-by`, and similar).
+
+## Keep commit messages and PR descriptions short
+
+The AI guidance does not allow large AI-generated commit messages. Reviewers
+read every word, so write only what they need:
+
+- State what changed and why in as few sentences as that takes. A small fix
+  needs a subject line and one or two sentences of body.
+- Don't walk through the diff file by file, list every function touched, or
+  describe tests the reviewer can read in the diff.
+- No headings, bold text, or bulleted summaries in a commit message.
+- Cut filler: "This commit...", "comprehensive", "robust", "ensures",
+  "enhances", a body that repeats the subject, and closing summaries.
+- Use the author's own description of the problem when they gave one.
+- In a PR description, answer each template section in a sentence or a few.
+  Leave "Special notes for your reviewer" to things a reviewer needs, such as
+  how generated edits were made or how the change was tested by hand.
+
+```text
+kubelet: skip image GC when disk stats are missing
+
+The image garbage collector divided by capacity without checking that
+cadvisor returned disk stats, which panics on nodes where stats are
+not yet available. Return early and retry on the next GC cycle.
+```
 
 ## Splitting and squashing
 

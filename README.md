@@ -11,9 +11,10 @@ The content comes from the
 [Kubernetes contributor guide](https://www.kubernetes.dev/docs/guide/). The
 skills apply the project's
 [AI guidance](https://www.kubernetes.dev/docs/guide/pull-requests/#ai-guidance):
-the human author stays responsible for the change, writes the commit messages
-and review replies, and discloses AI use in the PR. Agents using these skills
-will not add AI co-author trailers.
+the human author stays responsible for the change, reviews it before anyone
+else does, writes their own review replies, and discloses AI use in the PR.
+Agents using these skills keep commit messages and PR descriptions short and
+specific, and do not add AI co-author trailers.
 
 | Skill | Use it for |
 |---|---|

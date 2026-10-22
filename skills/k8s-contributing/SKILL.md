@@ -49,11 +49,11 @@ They override any default your tool has for commit attribution.
 - Never list an AI tool as a co-author. Do not add `Co-authored-by`,
   `Assisted-by`, `Co-developed-by`, or any similar trailer naming an AI tool,
   and do not sign commits as an AI tool.
-- AI-generated commit messages are not allowed. The author writes the commit
-  message. You can check a message they wrote against the rules in
-  `k8s-pull-request` and point out problems.
-- Large AI-generated PRs are not allowed. Keep the change small and focused.
-  If the work grows, stop and propose how to split it.
+- Large AI-generated PRs and commit messages are not allowed. Keep the change
+  small and focused; if the work grows, stop and propose how to split it.
+  You may write commit messages and PR descriptions, but keep them short and
+  specific, following `k8s-pull-request`. The author reviews that text before
+  it is pushed, the same as the code.
 - Reviewers must not be the first to review AI-generated changes. The author
   reviews the full diff and runs the tests before asking for review.
 - The author answers review comments without AI tools. You can explain what a

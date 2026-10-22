@@ -69,7 +69,7 @@ defined in the root `OWNERS_ALIASES`. Pick an approver who appears in the
 | `do-not-merge/needs-kind` | No `/kind` | Add `/kind <kind>` |
 | `do-not-merge/needs-sig` | No SIG label | Add `/sig <name>` |
 | `do-not-merge/release-note-label-needed` | Empty `release-note` block | Fill the block or write `NONE` |
-| `do-not-merge/invalid-commit-message` | Closing keyword or `@mention` in a commit | Reword the commit (author writes it) |
+| `do-not-merge/invalid-commit-message` | Closing keyword or `@mention` in a commit | Reword the commit |
 | `do-not-merge/contains-merge-commits` | Merge commit in history | Rebase to drop it |
 | `do-not-merge/invalid-owners-file` | Bad `OWNERS` change | Fix the YAML; `/verify-owners` |
 | `do-not-merge/blocked-paths` | Touches a path the repo blocks | Ask a maintainer |
